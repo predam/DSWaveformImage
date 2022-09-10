@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 /// Renders a live waveform everytime its `(0...1)`-normalized samples are changed.
-public class WaveformLiveView: UIView {
+open class WaveformLiveView: UIView {
 
     /// Default configuration with dampening enabled.
     public static let defaultConfiguration = Waveform.Configuration(dampening: .init(percentage: 0.125, sides: .both))
